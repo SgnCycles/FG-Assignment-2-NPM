@@ -1,8 +1,4 @@
 .channelMain {
-  /* flex-grow: 1;
-  padding-right: 70px;
-  display: flex;
-  flex-direction: column; */
   align-items: flex-end;
 }
 
@@ -16,21 +12,12 @@
 .channelPageHeader h1{
   font-family: 'Bebas Neue';
   font-size: 3rem;
-  /* color: #262C35; */
   color: rgb(233, 198, 100);
   letter-spacing: 3px;
     text-shadow:
     2px 2px #ff9f1c,
     4px 4px #c05621,
     8px 8px #3a1f0f;
-    /* text-shadow:
-    1px 1px white,
-    2px 2px white,
-    4px 4px #3a1f0f; */
-    /* text-shadow:
-    1px 1px #ff9f1c,
-    2px 2px #c05621,
-    4px 4px #3a1f0f; */
   letter-spacing: 4px;
   padding-top: 60px;
 }
@@ -40,8 +27,6 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
-  /* padding: 70px 70px 0 0 ; */
-  /* padding: clamp(20px, 5vw, 70px) clamp(20px, 5vw, 70px) 0 0; */
   padding: clamp(20px, 5vw, 70px) clamp(20px, 5vw, 70px) 0 0;
 }
 
@@ -104,4 +89,33 @@
   gap: 15px;
   padding-right: 20px;
   padding-bottom: 20px;
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .channelMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .channelPageHeader h1{
+      font-size: 3rem;
+      text-align: center;
+      margin: 0;
+      padding: 10px;
+    }
+
+  .channelWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .channelGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    background-color: #c08520;
+    border-radius: 15px;
+  }
 }
