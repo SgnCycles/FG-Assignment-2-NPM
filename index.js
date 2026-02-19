@@ -15,7 +15,7 @@ import { lifestyleChannels } from './data/data.js';
 import socialsLinks from './data/socials.js';
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 const __dirname = path.resolve();
 
 app.set('view engine', 'ejs');
