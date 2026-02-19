@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head") %> 
+<body class="categoryBody">
+  <%- include("../partials/header") %> 
+  <main class="categoryMain">
+    <div class="categoryHeader">
+    <% const matchingHeader = header.find(item => item.category === pageType) %>
+    <% if (matchingHeader) {%>
+      <h1><%= matchingHeader.header %></h1>
+    <% } %>
+    </div>
+    <div class="categoryChannelWrapper">
+      <% console.log(channels) %>
+        <% if (channels.length > 0) { %>
+          <% channels.forEach(channel => { %>
+            <div class="categoryChannelCard">
+              <div class="categoryChannelThumbnail">
+                <img src="<%= channel.image %>" alt="<%= channel.name %>" height="50px" width="auto">
+              </div>
+              <div class="categoryChannelinfo">
+                <h2><%= channel.title %></h2>
+                <span class="readMoreButtton"><a href="/<%= channel.category %>/<%= channel.slug %> " target="_blank">Find out more</a></span>
+            </div>
+              </div>
+        <% }) %>
+        <% } else { %>
+          <p>Channel not found</p>
+        <% } %>
+    </div>
+  </main>
+  <%- include("../partials/footer") %> 
+</body>
+</html>

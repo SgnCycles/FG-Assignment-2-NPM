@@ -1,0 +1,7 @@
+<nav class="navMenu">
+  <ul class="navMenuList">
+    <% navigationMenu.forEach(item => { %>
+      <li class="navMenuItem font-effect-neon"><a href="<%= item.link %>"><%=item.menuItem %></a></li>
+    <% }) %>
+  </ul>
+</nav>
