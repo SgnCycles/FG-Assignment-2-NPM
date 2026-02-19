@@ -4,6 +4,19 @@
   align-items: center;
 }
 
+.homepageHeader {
+  font-family: 'Bebas Neue';
+  font-size: 4rem;
+  color: rgb(233, 198, 100);
+  letter-spacing: 3px;
+  text-shadow:
+    2px 2px #ff9f1c,
+    4px 4px #c05621,
+    8px 8px #3a1f0f;
+  text-align: center;
+  letter-spacing: 6px;
+}
+
 .homepageText {
   grid-area: 1 / 1 / 2 / 5;
   color: #262C35;
@@ -17,4 +30,21 @@
   color: white;
   text-shadow: 2px 2px 2px rgb(43, 43, 43);
   letter-spacing: 2px;
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .homepageMain {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .homepageHeader {
+    font-size: 3.5rem;
+  }
+
+  .homepageSubtitle {
+    font-size: 1rem;
+    padding: 0;
+  }
 }

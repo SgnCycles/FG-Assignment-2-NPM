@@ -1,7 +1,10 @@
 <nav class="navMenu">
   <ul class="navMenuList">
     <% navigationMenu.forEach(item => { %>
-      <li class="navMenuItem font-effect-neon"><a href="<%= item.link %>"><%=item.menuItem %></a></li>
+      <li class="navMenuItem"><a href="<%= item.link %>"><%=item.menuItem %></a></li>
     <% }) %>
   </ul>
+  <button class="hamburger" aria-label="Mobile Menu button">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
