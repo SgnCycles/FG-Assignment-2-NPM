@@ -27,6 +27,6 @@ const socialsLinks = [
     name: 'homepage',
     icon: '../logos/home.png'
   }
-]
+];
 
-export default socialsLinks
+export default socialsLinks;

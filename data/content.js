@@ -19,7 +19,7 @@ export const navMenu = [
     menuItem: 'Lifestyle',
     link: '/lifestyle'
   }
-]
+];
 
 export const contentHomepage = [
   {

@@ -25,6 +25,6 @@ podcastRouter.get("/", (req, res) => {
     header: headerCategory,
   }
   );
-})
+});
 
 export default podcastRouter;

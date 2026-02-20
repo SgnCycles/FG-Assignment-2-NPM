@@ -25,6 +25,6 @@ lifestyleRouter.get("/", (req, res) => {
     header: headerCategory,
   }
   );
-})
+});
 
 export default lifestyleRouter;

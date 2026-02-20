@@ -1,12 +1,14 @@
 .channelMain {
   align-items: flex-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .channelPageHeader {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-area: 1 / 1 / 2 / 4;
+  align-self: center;
+  justify-self: center;
 }
 
 .channelPageHeader h1{
@@ -23,11 +25,9 @@
 }
 
 .channelWrapper {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  padding: clamp(20px, 5vw, 70px) clamp(20px, 5vw, 70px) 0 0;
+  grid-area: 2 / 2 / 4 / 4;
+  align-self: center;
+  justify-self: center;
 }
 
 .channelGrid {
@@ -91,19 +91,31 @@
   padding-bottom: 20px;
 }
 
-@media (min-width: 340px) and (max-width: 1024px) {
+@media (min-width: 340px) and (max-width: 1023px) {
+  .header {
+    padding: 0;
+  }
+
+  .navMenu {
+    padding-bottom: 0;
+  }
+
+  .navMenuList {
+    margin: 0;
+  }
+
   .channelMain {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-    .channelPageHeader h1{
-      font-size: 3rem;
-      text-align: center;
-      margin: 0;
-      padding: 10px;
-    }
+  .channelPageHeader h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
 
   .channelWrapper {
     display: flex;
@@ -118,4 +130,11 @@
     background-color: #c08520;
     border-radius: 15px;
   }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .channelWrapper {
+      justify-content: end;
+      align-items: center;
+    }
 }

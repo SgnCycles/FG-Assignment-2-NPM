@@ -25,6 +25,6 @@ entertainmentRouter.get("/", (req, res) => {
     header: headerCategory,
   }
   );
-})
+});
 
 export default entertainmentRouter;

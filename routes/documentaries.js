@@ -25,6 +25,6 @@ documentariesRouter.get("/", (req, res) => {
     header: headerCategory,
   }
   );
-})
+});
 
 export default documentariesRouter;

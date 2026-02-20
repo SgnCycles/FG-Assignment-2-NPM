@@ -288,7 +288,7 @@ export const documentaryChannels = [
     },
     slug: 'vice'
   },
-]
+];
 
 export const podcastChannels = [
   {
@@ -339,7 +339,7 @@ export const podcastChannels = [
     },
     slug: 'wanging-on',
   }
-]
+];
 
 export const entertainmentChannels = [
   {
@@ -347,7 +347,7 @@ export const entertainmentChannels = [
     image: '../images/thumbnails/graham_norton.jpg',
     banner: '../images/banners/grahamnorton_banner.jpg',
     id: 'UC4PziMH5MvvsmqM0VCZTy-g',
-    title: 'The Graham Norton Show',
+    title: 'Graham Norton Show',
     description: 'Celebrity guests, hilarious stories and all the best bits from The Graham Norton Show. Subscribe to the channel for weekly videos.',
     socials: {
       youtube: 'https://www.youtube.com/@OfficialGrahamNorton',
@@ -424,7 +424,7 @@ export const entertainmentChannels = [
     },
     slug: 'great-big-story'
   }
-]
+];
 
 export const lifestyleChannels = [
 {
@@ -557,4 +557,4 @@ export const lifestyleChannels = [
   },
   slug: 'beryl'
 },
-]
+];

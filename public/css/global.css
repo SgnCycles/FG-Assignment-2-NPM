@@ -7,27 +7,27 @@ html {
 }
 
 body {
-    margin: 0;
-    background-image: url("../images/background_desktop.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    height: 100%;
-    color: white;
+  margin: 0;
+  background-image: url("../images/background_desktop.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100%;
+  color: white;
 }
 
 .categoryBody, .channelBody {
-    margin: 0;
-    background-image: url("../images/background_other.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    height: 100%;
-    color: white;
+  margin: 0;
+  background-image: url("../images/background_other.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100%;
+  color: white;
 }
 
 .homepageBody, .categoryBody, .channelBody {
@@ -93,7 +93,6 @@ body {
 }
 
 @media (min-width: 340px) and (max-width: 1024px) {
-
   .homepageBody, .categoryBody, .channelBody {
     background-image: url("../images/background_mobile.png");
     display: flex;
