@@ -1,0 +1,148 @@
+.readMoreButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.readMoreButton {
+  position: relative;
+  font-size: 0.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  transform: rotate(-2deg);
+  transform-origin: center;
+  transition: transform 0.15s cubic-bezier(0.22, 0.61, 0.36, 1);
+  text-decoration: none;
+}
+
+.readMoreButtonInner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  padding: 10px 5px;
+  z-index: 3;
+  overflow: hidden;
+  transform: skew(-3deg, 1deg);
+  transition: transform 0.15s cubic-bezier(0.22, 0.61, 0.36, 1);
+  clip-path: polygon(
+    0% 10%,
+    3% 0%,
+    97% 0%,
+    100% 10%,
+    100% 90%,
+    97% 100%,
+    3% 100%,
+    0% 90%
+  );
+  margin: 5px 2px;
+}
+
+.readMoreButtonText {
+  position: relative;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 5;
+  color: white;
+  transform: rotate(2deg);
+}
+
+.readMoreButtonFrame {
+  position: absolute;
+  top: -0.3em;
+  left: -0.3em;
+  right: -0.3em;
+  bottom: -0.3em;
+  background-color: #ffef00;
+  border: 1px solid #000000;
+  z-index: 1;
+  transition: transform 0.15s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.readMoreButtonShadow {
+  position: absolute;
+  top: 0.4em;
+  left: 0.4em;
+  right: -0.4em;
+  bottom: -0.4em;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+  transition: all 0.15s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.readMoreButton:hover {
+  transform: rotate(-1deg) scale(1.07);
+}
+
+.readMoreButton:hover .readMoreButtonInner {
+  transform: skew(-5deg, 2deg);
+  background-color: #3d3dff;
+}
+
+.readMoreButton:hover .readMoreButtonText {
+  color: #ffffff;
+  text-shadow:
+    0.05em 0.05em 0 #000000,
+    -0.05em -0.05em 0 #000000,
+    0.05em -0.05em 0 #000000,
+    -0.05em 0.05em 0 #000000;
+}
+
+.readMoreButton:hover .readMoreButtonShadow {
+  transform: translate(0.2em, 0.2em);
+}
+
+.readMoreButton:focus {
+  outline: none;
+}
+
+.readMoreButton:focus .readMoreButtonFrame {
+  border-color: var(--secondary-color);
+}
+
+.readMoreButton:active {
+  transform: rotate(0) scale(0.98);
+}
+
+.readMoreButton:active .readMoreButtonInner {
+  transform: skew(0, 0);
+}
+
+.readMoreButton:active .readMoreButtonShadow {
+  transform: translate(0.1em, 0.1em);
+}
+
+@keyframes burst {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.readMoreButton:active .readMoreButtonText {
+  animation: burst 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.readMoreButton:focus::after {
+  content: "";
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  bottom: -0.5em;
+  border: 0.15em dashed #000000;
+  z-index: 0;
+  animation: dash 1s linear infinite;
+  pointer-events: none;
+}

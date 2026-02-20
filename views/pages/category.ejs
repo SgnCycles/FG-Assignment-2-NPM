@@ -11,7 +11,6 @@
     <% } %>
     </div>
     <div class="categoryChannelWrapper">
-      <% console.log(channels) %>
         <% if (channels.length > 0) { %>
           <% channels.forEach(channel => { %>
             <div class="categoryChannelCard">
@@ -20,9 +19,9 @@
               </div>
               <div class="categoryChannelinfo">
                 <h2><%= channel.title %></h2>
-                <span class="readMoreButtton"><a href="/<%= channel.category %>/<%= channel.slug %> ">Find out more</a></span>
-            </div>
+                <%- include("../partials/readmore", {channel: channel}) %> 
               </div>
+            </div>
         <% }) %>
         <% } else { %>
           <p>Channel not found</p>

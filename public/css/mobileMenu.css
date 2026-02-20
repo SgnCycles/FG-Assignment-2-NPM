@@ -3,7 +3,7 @@
   display: none;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
 
   .hamburger {
     position: relative;
@@ -12,16 +12,12 @@
     justify-content: center;
     align-items: center;
     gap: 6px;
-    /* width: 35px;
-    height: 28px; */
     width: 50px;
     height: 50px;
     background: none;
     border: none;
     z-index: 1001;
     flex-shrink: 0;
-    background-color: purple;
-    border-radius: 50%;
   }
 
   .hamburger span {

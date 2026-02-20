@@ -32,7 +32,11 @@
   letter-spacing: 2px;
 }
 
-@media (min-width: 340px) and (max-width: 1024px) {
+.homepageSubtitle p {
+text-align: left;
+}
+
+@media (min-width: 340px) and (max-width: 767px) {
   .homepageMain {
     display: flex;
     justify-content: flex-start;
@@ -41,10 +45,26 @@
 
   .homepageHeader {
     font-size: 3.5rem;
+    margin: 20px;
   }
 
   .homepageSubtitle {
     font-size: 1rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .homepageMain {
+    justify-content: flex-start;
+  }
+
+  .homepageHeader {
+    font-size: 5rem;
+  }
+
+  .homepageSubtitle {
+    font-size: 1.5rem;
     padding: 0;
   }
 }
