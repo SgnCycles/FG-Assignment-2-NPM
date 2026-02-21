@@ -49,14 +49,12 @@ app.get('/:category/:slug', (req, res) => {
   };
 
   const dataCategorySource = channelData[category];
-  console.log(dataCategorySource);
 
   if(!dataCategorySource) {
     return res.status(404).send('Page not found');
   }
 
   const item = dataCategorySource.find(item => item.slug === slug)
-  console.log(item);
 
    if(!item) {
     return res.status(404).send('Page not found');
