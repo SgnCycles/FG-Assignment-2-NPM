@@ -95,7 +95,7 @@ export const documentaryChannels = [
     banner: '../images/banners/thatchapter_banner.jpg',
     id: 'UCL44k-cLrlsdr7PYuMU4yIw',
     title: 'That Chapter',
-    description: '',
+    description: 'Mike started his channel on September 23, 2017. His videos usually consist of looking into various crime cases, most of which remain unsolved. Mike usually uploads 2 videos weekly.',
     socials: {
       youtube: 'https://www.youtube.com/@ThatChapter',
       facebook: 'https://www.facebook.com/ThatChapterOfficial/',
@@ -347,7 +347,7 @@ export const entertainmentChannels = [
     image: '../images/thumbnails/graham_norton.jpg',
     banner: '../images/banners/grahamnorton_banner.jpg',
     id: 'UC4PziMH5MvvsmqM0VCZTy-g',
-    title: 'Graham Norton Show',
+    title: 'The Graham Norton Show',
     description: 'Celebrity guests, hilarious stories and all the best bits from The Graham Norton Show. Subscribe to the channel for weekly videos.',
     socials: {
       youtube: 'https://www.youtube.com/@OfficialGrahamNorton',
@@ -362,7 +362,7 @@ export const entertainmentChannels = [
   {
     category: 'entertainment',
     image: '../images/thumbnails/papa_meat.jpg',
-    banner: '',
+    banner: '../images/banners/papameat_banner.webp',
     id: 'UCYF1kiTFCcYPqGTqXKt3JJg',
     title: 'Papa Meat',
     description: 'I make cartoon on my main account, but i make other stuff here :)',

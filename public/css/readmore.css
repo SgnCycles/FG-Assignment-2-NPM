@@ -43,6 +43,7 @@
 }
 
 .readMoreButtonText {
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
   position: relative;
   font-weight: 700;
   font-size: 0.9rem;

@@ -5,7 +5,7 @@
   <%- include("../partials/header") %>
   <main class="channelMain">
     <div class="channelPageHeader">
-      <h1>Get to know <%= locals.title %></h1>
+      <h1>Get to know <%= locals.title %> channel</h1>
     </div>
     <div class="channelWrapper">
       <div class="channelGrid">
@@ -22,11 +22,15 @@
           <p><%= locals.channelContent %></p>
         </div>
         <div class="channelSocials">
-          <%  socialsIcons.forEach(social => {%>
-            <% if(socials[social.name]) { %>
-              <a href="<%= socials[social.name]%>"><img src="<%= social.icon %>" alt="<%= social.name %>" height="30px" width="auto"></a>
-              <% } %>
-          <% }) %>
+          <% if (locals.socialsIcons && locals.socials) {%>
+            <% socialsIcons.forEach(social => {%>
+              <% if(socials[social.name]) { %>
+                <a href="<%= socials[social.name]%>"><img src="<%= social.icon %>" alt="Link to <%= social.name %>" height="30px" width="auto"></a>
+                <% } %>
+            <% }) %>
+          <% } else { %>
+            <p>No socials are available for this channel.</p>
+          <% } %>
         </div>
       </div>
     </div>

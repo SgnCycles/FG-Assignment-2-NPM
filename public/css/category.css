@@ -9,7 +9,7 @@
 }
 
 .categoryHeader h1{
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
   font-size: 4rem;
   color: rgb(233, 198, 100);
   letter-spacing: 3px;
@@ -54,7 +54,7 @@
 }
 
 .categoryChannelinfo {
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;

@@ -5,7 +5,7 @@
 }
 
 .homepageHeader {
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
   font-size: 4rem;
   color: rgb(233, 198, 100);
   letter-spacing: 3px;
@@ -23,7 +23,7 @@
 }
 
 .homepageSubtitle {
-  font-family: 'Roboto';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   padding: 30px;
   text-align: right;
