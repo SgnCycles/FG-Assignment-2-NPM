@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background-image: url("../images/background_desktop.png");
+  background-image: url('../images/background_desktop.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -20,7 +20,7 @@ body {
 
 .categoryBody, .channelBody {
   margin: 0;
-  background-image: url("../images/background_other.png");
+  background-image: url('../images/background_other.png');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -42,7 +42,7 @@ body {
 .header {
   grid-area: 1 / 5 / 6 / 6;
   background-color: rgba(0, 3, 7, 0.5);
-  font-family: 'Righteous';
+  font-family: 'Righteous', Arial, Helvetica, sans-serif;
   height: auto;
   position: relative;
 }
@@ -71,7 +71,7 @@ body {
 .navMenuItem a {
   text-decoration: none;
   color: #EDEBDE;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .homepageMain, .categoryMain, .channelMain {
@@ -87,14 +87,14 @@ body {
   align-items: flex-end;
   padding-left: 30px;
   letter-spacing: 10px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   color: snow;
    text-shadow: 3px 3px #3a1f0f;
 }
 
 @media (min-width: 340px) and (max-width: 1024px) {
   .homepageBody, .categoryBody, .channelBody {
-    background-image: url("../images/background_mobile.png");
+    background-image: url('../images/background_mobile.png');
     display: flex;
     flex-direction: column;
   }

@@ -1,22 +1,4 @@
 @font-face {
-    font-family: 'Funnel Sans';
-    src: url('../fonts/FunnelSans-LightItalic.woff2') format('woff2'),
-        url('../fonts/FunnelSans-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Funnel Sans';
-    src: url('../fonts/FunnelSans-Light.woff2') format('woff2'),
-        url('../fonts/FunnelSans-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
         url('../fonts/Roboto-Regular.woff') format('woff');
@@ -35,27 +17,9 @@
 }
 
 @font-face {
-    font-family: 'Shrikhand';
-    src: url('../fonts/Shrikhand-Regular.woff2') format('woff2'),
-        url('../fonts/Shrikhand-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Righteous';
     src: url('../fonts/Righteous-Regular.woff2') format('woff2'),
         url('../fonts/Righteous-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Anton';
-    src: url('../fonts/Anton-Regular.woff2') format('woff2'),
-        url('../fonts/Anton-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -75,15 +39,6 @@
     src: url('../fonts/Fredoka-Light.woff2') format('woff2'),
         url('../fonts/Fredoka-Light.woff') format('woff');
     font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Oswald';
-    src: url('../fonts/Oswald-Regular.woff2') format('woff2'),
-        url('../fonts/Oswald-Regular.woff') format('woff');
-    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }

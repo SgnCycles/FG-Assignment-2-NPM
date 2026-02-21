@@ -5,10 +5,10 @@
   <%- include("../partials/header") %>
   <main class="homepageMain">
     <div class="homepageText">
-      <h1 class="homepageHeader"><%= headerHomepage %></h1>
+      <h1 class="homepageHeader"><%= locals.headerHomepage %></h1>
       <blockquote class="homepageSubtitle">
-        <p><%= introHomepage %></p>
-        <cite><%= authorHomepage %></cite>
+        <p><%= locals.introHomepage %></p>
+        <cite><%= locals.authorHomepage %></cite>
       </blockquote>
     </div>
   </main>
