@@ -131,10 +131,22 @@
     padding: 10px;
   }
 
+  .channelHeader h2{
+    position: relative;
+    left: -50px;
+    top: 15px;
+  }
+
+  .channelThumbnail img{
+    position: relative;
+    left: -15px;
+    top: 15px;
+  }
+
   .channelWrapper {
     display: flex;
-    justify-content: center;
     padding: 10px;
+    justify-content: center;
   }
 
   .channelGrid {

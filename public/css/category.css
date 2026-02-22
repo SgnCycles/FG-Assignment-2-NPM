@@ -64,6 +64,7 @@
 .categoryChannelinfo h2{
   margin: 0;
   text-shadow: 2px 2px 2px rgb(74, 72, 72);
+  text-align: center;
 }
 
 @media (min-width: 340px) and (max-width: 767px) {
