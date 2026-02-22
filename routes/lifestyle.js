@@ -11,14 +11,13 @@ const __dirname = path.resolve();
 
 lifestyleRouter.get("/", (req, res) => {
 
-  res.render(path.join(__dirname, "/views/pages/category"),
+  res.render(path.join(__dirname, '/views/pages/category'),
   {
     headTitle: 'Lifestyle',
-    pageTitle: "Welcome to the Documentaries",
-    paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos ipsum qui eligendi veritatis deserunt sapiente delectus voluptates? Quo corporis repudiandae delectus veniam natus placeat excepturi facilis unde doloremque voluptatum?",
-    className: "doc-style",
-    documentTitle: "Lifestyle",
-    pageType: "lifestyle",
+    pageTitle: 'Welcome to the Documentaries',
+    paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos ipsum qui eligendi veritatis deserunt sapiente delectus voluptates? Quo corporis repudiandae delectus veniam natus placeat excepturi facilis unde doloremque voluptatum?',
+    documentTitle: 'Lifestyle',
+    pageType: 'lifestyle',
     navigationMenu: navMenu,
     channels: lifestyleChannels,
     footer: footerContent.footerText,

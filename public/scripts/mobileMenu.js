@@ -20,6 +20,3 @@ navMenuItems.forEach(item => {
     item.setAttribute('aria-current', 'true')
   });
 });
-
-console.log('hamburger:', hamburgerMenu);
-console.log('navMenu:', navMenu);

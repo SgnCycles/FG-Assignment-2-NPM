@@ -103,10 +103,6 @@
   outline: none;
 }
 
-.readMoreButton:focus .readMoreButtonFrame {
-  border-color: var(--secondary-color);
-}
-
 .readMoreButton:active {
   transform: rotate(0) scale(0.98);
 }
