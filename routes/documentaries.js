@@ -16,7 +16,6 @@ documentariesRouter.get("/", (req, res) => {
   {
     headTitle: 'Documentaries',
     pageTitle: 'Welcome to the Documentaries',
-    paragraph: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos ipsum qui eligendi veritatis deserunt sapiente delectus voluptates? Quo corporis repudiandae delectus veniam natus placeat excepturi facilis unde doloremque voluptatum?',
     documentTitle: 'Documentaries',
     pageType: 'documentaries',
     navigationMenu: navMenu,
@@ -49,6 +48,5 @@ documentariesRouter.get('/:slug', (req, res) => {
     footer: footerContent.footerText,
   });
 });
-
 
 export default documentariesRouter;
