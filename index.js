@@ -8,11 +8,6 @@ import podcastRouter from './routes/podcasts.js';
 import { navMenu } from './data/content.js';
 import { contentHomepage } from './data/content.js';
 import { footerContent } from './data/content.js';
-import { documentaryChannels } from './data/data.js';
-import { podcastChannels } from './data/data.js';
-import { entertainmentChannels } from './data/data.js';
-import { lifestyleChannels } from './data/data.js';
-import socialsLinks from './data/socials.js';
 
 const app = express();
 const port = process.env.PORT;
@@ -35,41 +30,6 @@ app.get('/', (req,res) => {
     headerHomepage: contentHomepage[0].homepageHeader,
     introHomepage: contentHomepage[0].introHomepage,
     authorHomepage: contentHomepage[0].authorHomepage,
-    footer: footerContent.footerText,
-  });
-});
-
-app.get('/:category/:slug', (req, res) => {
-  const {category, slug} = req.params;
-  const channelData = {
-    documentaries: documentaryChannels,
-    podcasts: podcastChannels,
-    entertainment: entertainmentChannels,
-    lifestyle: lifestyleChannels,
-  };
-
-  const dataCategorySource = channelData[category];
-
-  if(!dataCategorySource) {
-    return res.status(404).send('Page not found');
-  }
-
-  const item = dataCategorySource.find(item => item.slug === slug)
-
-   if(!item) {
-    return res.status(404).send('Page not found');
-  }
-
-  res.render('pages/channel', {
-    pageType: 'channel',
-    navigationMenu: navMenu,
-    headTitle: item.title,
-    title: item.title,
-    channelContent: item.description,
-    image: item.image,
-    banner: item.banner,
-    socials: item.socials,
-    socialsIcons: socialsLinks,
     footer: footerContent.footerText,
   });
 });
